@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Momentum</title>
+</head>
+<body>
+     <!-- 날씨 ------------------------------------->
+     <div id="weather">
+        <span></span><br>
+        <span></span>
+    </div>
+
+
+    <!-- 시계 ------------------------------------->
+    <h2 id="clock">00:00</h2>
+
+    <!-- 로그인 ------------------------------------->
+    <form class="hidden" id="login-form">
+            <h3>What is your name?</h3>
+            <input
+                id="inputName"
+                required
+                maxlength="15"
+                type="text"
+            />
+            
+    </form>
+    <div id="wrap-center">
+        <!-- 인사말 ------------------------------------>
+        <h1 class="hidden" id="greeting"></h1>
+
+        <!-- 할일 목록 ------------------------------------->
+        <form class="hidden" id="todo-form">
+            <h4>Write down your todo item</h4>
+            <!-- required : 빈칸은 입력되지 않는다. -->
+            <input id="inputTodo" type="text" required />
+        </form>
+        <ul class="hidden" id="todo-list"></ul>
+    </div>
+
+    <!-- 명언 ------------------------------------->
+    <div id="quote">
+        <span></span><br>
+        <span></span>
+    </div>
+    
+   
+
+    <!-- JS import ------------------------------------->
+    <script src="js/greeting.js"></script>
+    <script src="js/clock.js"></script>
+    <script src="js/quotes.js"></script>
+    <script src="js/background.js"></script>
+    <script src="js/todo.js"></script>
+    <script src="js/weather.js"></script>
+</body>
+</html>
