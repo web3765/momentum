@@ -26,7 +26,7 @@ function onLoginSubmit(event) {
 // 반복되는 작업을 함수로 만들기
 function paintGreetings(username) {
     // show the greeting | 유저 정보 기억하기
-    greeting.innerText = `Hello,  ${username}`;
+    greeting.innerText = `Hello,  ${username} !`;
     greeting.classList.remove(HIDDEN_CLASSNAME);
 
     toDoFormInGreeting.classList.remove(HIDDEN_CLASSNAME);

@@ -3,6 +3,9 @@
 }
 
 body {
+
+    
+    font-family: 'Varela Round', sans-serif;
     display: flex;
     /* justify-content: center; */
     align-items: center;
@@ -22,25 +25,33 @@ img {
     background-color: rgba(255, 255, 255, 0.5);
 }
 
+
+#weather {
+    position: absolute;
+    font-size: 16px;
+    position: absolute;
+    top: 25px;
+    right: 25px;
+}
+
 #clock {
     font-size: 100px;
     margin-top: 200px;
 }
 
 #wrap-center {
-    column-count: 2;
-    max-width: 80%;
- 
-    justify-content: center;
+    position: absolute;
+    top: 400px;
+    /* justify-content: center;
     align-items: center;
-    flex-direction: column;
+    flex-direction: column; */
     
 }
 
 #inputName {
-    width: 65%;
-    padding: 1em 1em 0.25em 1em;
-    font-size: 1em;
+    width: 100%;
+    /* padding: 1em 1em 0.25em 1em;
+    font-size: 1em; */
     background-color: transparent;
     border: none;
     border-bottom: 4px solid white;
@@ -49,23 +60,24 @@ img {
     outline: none;
 }
 
+#greeting {
+    text-align: center;
+}
+
+
 #inputTodo {
     width: 100%;
     display: flex;
-    
+    background-color: transparent;
     border: none;
     border-bottom: 4px solid white;
     outline: none;
 }
 
 #quote {
-    margin-top: 400px;
+    margin-top: 380px;
+    text-align: center;
+    line-height: 30px;
+    font-style: italic;
 }
 
-#weather {
-    font-size: 20px;
-    text-align: center;
-    position:absolute;
-    top: 20px;
-    right: 20px;
-}

@@ -14,9 +14,9 @@ function onGeoOk(position) {
         const weather = document.querySelector("#weather span:first-child");
         const city = document.querySelector("#weather span:last-child");
   
-        city.innerText = data.name; 
+        city.innerText = `@ ${data.name}`; 
         // String 합하기 위해 `(백틱) 사용
-        weather.innerText = `${data.main.temp}°C ${data.weather[0].main}`;
+        weather.innerText = `${Math.floor(data.main.temp)}°C  ${data.weather[0].main}`;
     });
 }
 
