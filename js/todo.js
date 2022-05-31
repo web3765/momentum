@@ -40,7 +40,7 @@ function paintToDo(newTodo) {
 
     // 삭제 버튼
     const button = document.createElement("button");
-    button.innerText = "❌"
+    button.innerText = "x"
     button.addEventListener("click", deleteToDo);
 
     // li 안에 span
